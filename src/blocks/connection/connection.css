@@ -1,42 +1,153 @@
 .connection {
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto;
+  position: relative;
+  height: 860px;
+  margin-inline: 36px;
   border-radius: 4px;
   background-color: rgba(217, 217, 217, 1);
-  margin-inline: 36px;
 }
 
-.connection_title_container {
-  padding-inline-start: 69px;
-  padding-inline-end: 452px;
-  padding-block-start: 67px;
-  padding-block-end: 571px;
+.connection video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-.connection_title {
-  text-transform: uppercase;
-  color: rgb(255, 255, 255, 1);
-  font-size: 80px;
-  font-weight: 500;
-  line-height: 96px;
-  letter-spacing: 0.06em;
-}
-
-.connection_button_container {
+.connection-button_container {
   display: grid;
-  justify-content: end;
+  background-color: var(--bg-color);
+  position: absolute;
+  width: 346px;
+  height: 128px;
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.connection_button {
-  cursor: pointer;
-}
-
-.connection_button_text {
-  padding-block-start: 18px;
+.connection-button {
+  display: grid;
+  justify-items: start;
+  position: relative;
   font-size: 15.92px;
   font-weight: 500;
   line-height: 19.11px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
+  height: 91px;
+  color: var(--bg-color);
+  background-color: var(--bg-button-color);
+}
+
+.connection-button_text {
+  padding-block-start: 18px;
+  padding-inline-start: 116px;
+}
+
+.connection-button_arrow {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 62px;
+  top: 21px;
+  width: 4.55px;
+  height: 4.55px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: var(--bg-color);
+}
+
+@media (min-width:1024px) and (max-width:1699px) {
+  .connection {
+    margin-inline: 30px;
+    border-radius: 2.37px;
+    height: 510px;
+  }
+
+  .connection-button_container {
+    display: grid;
+    background-color: var(--bg-color);
+    position: absolute;
+    width: 204px;
+    height: 88px;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .connection-button {
+    display: grid;
+    justify-items: start;
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    height: 55px;
+    color: var(--bg-color);
+    background-color: var(--bg-button-color);
+  }
+
+  .connection-button_text {
+    padding-block-start: 22px;
+    padding-inline-start: 56px;
+  }
+
+  .connection-button_arrow {
+    right: 31px;
+    top: 24px;
+    width: 4.55px;
+    height: 4.55px;
+  }
+}
+
+@media (max-width:1023px) {
+  .connection {
+    height: 640px;
+    margin-inline: 0;
+    border-radius: 0;
+  }
+
+  .connection-button_container {
+    display: grid;
+    background-color: var(--bg-color);
+    position: absolute;
+    width: 183px;
+    height: 44px;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .connection-button_container-white {
+    height: 0;
+  }
+
+  .connection-button {
+    display: grid;
+    justify-items: start;
+    position: relative;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    height: 44px;
+  }
+
+  .connection-button_text {
+    padding-block-start: 16px;
+    padding-inline-start: 46px;
+  }
+
+  .connection-button_arrow {
+    right: 16px;
+    top: 19px;
+    width: 4px;
+    height: 4px;
+  }
 }
