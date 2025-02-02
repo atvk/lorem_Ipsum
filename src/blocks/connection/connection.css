@@ -1,0 +1,42 @@
+.connection {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  border-radius: 4px;
+  background-color: rgba(217, 217, 217, 1);
+  margin-inline: 36px;
+}
+
+.connection_title_container {
+  padding-inline-start: 69px;
+  padding-inline-end: 452px;
+  padding-block-start: 67px;
+  padding-block-end: 571px;
+}
+
+.connection_title {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255, 1);
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 96px;
+  letter-spacing: 0.06em;
+}
+
+.connection_button_container {
+  display: grid;
+  justify-content: end;
+}
+
+.connection_button {
+  cursor: pointer;
+}
+
+.connection_button_text {
+  padding-block-start: 18px;
+  font-size: 15.92px;
+  font-weight: 500;
+  line-height: 19.11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
