@@ -53,13 +53,11 @@
   background-color: rgba(232, 225, 224, 1);
   clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%);
 }
-
 .goods_link {
   display: grid;
   padding-inline-start: 49px;
   color: rgba(124, 110, 107, 1);
 }
-
 .goods_link:visited {
   color: rgba(124, 110, 107, 1);
 }
@@ -68,10 +66,22 @@
   display: grid;
   align-items: center;
 }
+.services_link{
+  color:var(--bg-color)
+}
+.services_link:visited{
+  color:var(--bg-color)
+}
 
 .company_container {
   display: grid;
   align-items: center;
+}
+.company_link{
+  color:var(--bg-color)
+}
+.company_link:visited{
+  color:var(--bg-color)
 }
 
 .header-dark_navigation {
@@ -79,12 +89,10 @@
   gap: 28px;
   margin-inline-end: 15px;
 }
-
 .button_container {
   display: grid;
   align-items: center;
 }
-
 button[type="bid"] {
   display: grid;
   padding-block-start: 15px;
@@ -106,12 +114,17 @@ button[type="bid"] {
   align-items: center;
   margin-inline-start: 7px;
 }
+.contact_link{
+  color:var(--bg-color)
+}
+.contact_link:visited{
+  color:var(--bg-color)
+}
 
 .search_container {
   display: grid;
   align-items: center;
 }
-
 button[type="search"] {
   display: grid;
   width: 25px;
@@ -123,9 +136,11 @@ button[type="search"] {
   display: grid;
   align-items: center;
 }
-
+.language_link{
+  color: var(--light-brown-color)
+}
 .language_link:visited {
-  color: rgba(211, 200, 187, 1)
+  color: var(--light-brown-color)
 }
 
 .nav_container {
@@ -133,7 +148,6 @@ button[type="search"] {
   align-items: center;
   position: relative;
 }
-
 .nav_container a {
   display: grid;
   position: absolute;
@@ -143,7 +157,6 @@ button[type="search"] {
   height: 1.5px;
   background: rgb(245, 245, 245, 1);
 }
-
 .nav_container a:before,
 .nav_container a:after {
   content: "";
@@ -153,11 +166,9 @@ button[type="search"] {
   height: 1.5px;
   background: rgb(245, 245, 245, 1);
 }
-
 .nav_container a:before {
   top: -7px;
 }
-
 .nav_container a:after {
   bottom: -7px;
 }
@@ -177,6 +188,12 @@ button[type="search"] {
   gap: 50px;
   align-items: center;
   padding-inline-start: 352px;
+  color: var(--dark-brown-color);
+}
+.list_link{
+  color: var(--dark-brown-color);
+}
+.list_link:visited{
   color: var(--dark-brown-color);
 }
 
