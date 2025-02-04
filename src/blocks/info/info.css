@@ -12,6 +12,7 @@
   display: grid;
   position: relative;
   margin-inline: 36px;
+  grid-template-columns: minmax(351px, auto);
   grid-template-rows: repeat(3, min-content);
 }
 
@@ -259,8 +260,7 @@
   }
 
   .info_header {
-    margin-inline-start: 12px;
-    margin-inline-end: 0;
+    margin-inline: 12px;
   }
 
   .info_header-title {
@@ -276,14 +276,16 @@
   .gold-line {
     width: 63px;
     top: 8px;
+    right: -12px;
   }
 
   .gold-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 20.46px;
+    margin: 0;
     margin-block-start: 60px;
-    margin-inline: 12px;
+
   }
 
   .info_content-one {

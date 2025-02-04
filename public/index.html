@@ -36,7 +36,7 @@
                 <a href="#0" class="contact_link">Контакты</a>
               </li>
               <li class="search_container">
-                <button type="search"></button>
+                <button type="search" class="search"></button>
               </li>
               <li class="language_container">
                 <a href="#0" class="language_link">En</a>
@@ -178,39 +178,45 @@
               <span class="section-line"></span>
               <div class="section">
                 <h4 class="title">Флотомашины и чаны</h4>
-                <ul class="list">
-                  <li><a>МП</a></li>
-                  <li><a>ЧП</a></li>
-                  <li><a>ЧКЭ</a></li>
-                  <li><a>Нестандартное Lorem Ipsum</a></li>
+                <ul class="section__link-list">
+                  <li><a href="#0">МП</a></li>
+                  <li><a href="#0">ЧП</a></li>
+                  <li><a href="#0">ЧКЭ</a></li>
+                  <li><a href="#0">Нестандартное Lorem Ipsum</a></li>
                 </ul>
               </div>
 
               <div class="section">
                 <h4 class="title">Автоматизация</h4>
-                <ul class="list">
-                  <li style="color: rgba(49, 19, 17, 1)">
-                    <a>Локальные АСУ</a>
+                <ul class="section__link-list">
+                  <li>
+                    <a style="color: rgba(49, 19, 17, 1)" href="#0"
+                      >Локальные АСУ</a
+                    >
                   </li>
-                  <li><a>РУВ</a></li>
-                  <li><a>SD</a></li>
-                  <li><a>SC</a></li>
-                  <li><a>SK</a></li>
-                  <li><a>SP</a></li>
+                  <li><a href="#0">РУВ</a></li>
+                  <li><a href="#0">SD</a></li>
+                  <li><a href="#0">SC</a></li>
+                  <li><a href="#0">SK</a></li>
+                  <li><a href="#0">SP</a></li>
                 </ul>
-                <ul class="list">
-                  <li style="color: rgba(49, 19, 17, 1)"><a>АСУТП</a></li>
+                <ul class="section__link-list">
+                  <li>
+                    <a href="#0" style="color: rgba(49, 19, 17, 1)">АСУТП</a>
+                  </li>
                 </ul>
               </div>
 
               <div>
-                <ul class="list">
-                  <li style="color: rgba(49, 19, 17, 1)">
-                    <a>Интеллектуальные системы</a>
+                <ul class="section__link-list">
+                  <li>
+                    <a style="color: rgba(49, 19, 17, 1)" href="#0"
+                      >Интеллектуальные системы</a
+                    >
                   </li>
                   <li><button class="section-button">SN</button></li>
-                  <li><a>SV</a></li>
-                  <li><a>SP</a></li>
+                  <li><a href="#0">SV</a></li>
+                  <li><a href="#0">SP</a></li>
                 </ul>
               </div>
             </section>
@@ -219,18 +225,18 @@
               <span class="section-line"></span>
 
               <div class="section">
-                <ul class="list" style="margin-left: -14px">
-                  <li>Технологические исследования и аудит</li>
-                  <li>Проектирование</li>
-                  <li>Строительно-монтажные работы</li>
+                <ul class="section__link-list" style="margin-left: -14px">
+                  <li><a href="#0">Технологические исследования и аудит</a></li>
+                  <li><a href="#0">Проектирование</a></li>
+                  <li><a href="#0">Строительно-монтажные работы</a></li>
                 </ul>
               </div>
 
               <div>
                 <h4 class="title">Сервисное сопровождение</h4>
-                <ul class="list">
-                  <li>Сервис</li>
-                  <li>Технологическая поддержка</li>
+                <ul class="section__link-list">
+                  <li><a href="#0">Сервис</a></li>
+                  <li><a href="#0">Технологическая поддержка</a></li>
                 </ul>
               </div>
             </section>
@@ -238,12 +244,12 @@
               <h3 class="section-title">Компании</h3>
               <span class="section-line"></span>
               <div class="section">
-                <ul class="list" style="margin-left: -14px">
-                  <li>Новости и события</li>
-                  <li>Проекты</li>
-                  <li>Карьера</li>
-                  <li>Отзывы заказчиков</li>
-                  <li>Документы</li>
+                <ul class="section__link-list" style="margin-left: -14px">
+                  <li><a href="#0">Новости и события</a></li>
+                  <li><a href="#0">Проекты</a></li>
+                  <li><a href="#0">Карьера</a></li>
+                  <li><a href="#0">Отзывы заказчиков</a></li>
+                  <li><a href="#0">Документы</a></li>
                 </ul>
               </div>
               <div>
@@ -288,8 +294,7 @@
           </p>
           <form>
             <div class="popup__form">
-              <input
-                id="name-input"
+              <input id="name-input"
                 type="text"
                 name="name"
                 class="popup__input popup__input_type_name"
@@ -301,31 +306,26 @@
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="name-input-error popup__input-error"></span>
-
-              <input
-                id="email-input"
+              <input id="email-input"
                 type="text"
                 name="email"
                 class="popup__input popup__input_type_email"
                 placeholder="E-mail*"
                 required
-                maxlength="200"
-                minlength="2"
-                pattern="^[а-яёА-ЯЁa-zA-Z\-\s]*$"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                pattern="^\S+@\S+\.\S+$"
+                data-error-message="Пожалуйста, введите корректный адрес электронной почты"
               />
               <span class="popup__input-error description-input-error"></span>
-
-              <input
-                id="phone-input"
-                type="text"
-                name="email"
-                class="popup__input popup__input_type_phone"
-                placeholder="Телефон*"
-                pattern="[7-9]{1}[0-9]{9}"
-              />
+              <input id="phone-input" type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="Телефон*"
+              class="popup__input popup__input_type_phone"
+              pattern="[0-9]{11}" 
+              required
+              data-error-message="Пожалуйста, введите корректный номер телефона"
+               />
               <span class="popup__input-error description-input-error"></span>
-
               <input
                 id="description-input"
                 type="text"
@@ -339,30 +339,21 @@
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="name-input-error popup__input-error"></span>
-
-              <div class="popup__input-imitation">
-                Приложить файлы (до трех файлов)
-                <input
-                  type="file"
-                  name="file"
-                  id="file"
-                  class="popup__input_type_file"
-                />
-                <label class="file-input__label" for="file"
-                  ><span></span
-                ></label>
+              
+              <div class="popup__input-imitation">Приложить файлы (до трех файлов)
+                <input type="file" name="file" id="file" class="popup__input_type_file"/>
+                <label class="file-input__label" for="file"><span></span></label>
               </div>
+              
+              
+
             </div>
             <div class="popup__action">
-              <span class="popup__rule"
-                >Отправляя эту форму, я принимаю
-                <a class="popup__link">политику конфиденциальности</a>
-                этого сайта.</span
-              >
+                <span class="popup__rule">Отправляя эту форму, я принимаю<a class="popup__link">политику конфиденциальности</a>этого сайта.</span>
 
-              <button type="submit" name="button" class="button popup__button">
-                Сохранить
-              </button>
+                <button type="submit" name="button" class="button popup__button">
+                  Сохранить
+                </button>
             </div>
           </form>
         </div>

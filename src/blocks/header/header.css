@@ -298,6 +298,7 @@ button[type="sn"] {
   }
 
   .header-dark-menu {
+    min-width: 375px;
     justify-content: end;
   }
 
