@@ -1,10 +1,27 @@
 .connection {
   display: grid;
+  z-index: 0;
   position: relative;
   height: 860px;
   margin-inline: 36px;
   border-radius: 4px;
   background-color: rgba(217, 217, 217, 1);
+}
+
+.connection-title {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: 67px;
+  left: 69px;
+  width: auto;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 96px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-color);
+
 }
 
 .connection video {
@@ -68,6 +85,13 @@
     height: 510px;
   }
 
+  .connection-title {
+    top: 41px;
+    left: 51px;
+    font-size: 47px;
+    line-height: 56px;
+  }
+
   .connection-button_container {
     display: grid;
     background-color: var(--bg-color);
@@ -111,6 +135,14 @@
     height: 640px;
     margin-inline: 0;
     border-radius: 0;
+  }
+
+  .connection-title {
+    top: 80px;
+    left: 12px;
+    right: 112px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .connection-button_container {
