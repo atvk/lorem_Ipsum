@@ -1,0 +1,123 @@
+.order {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto;
+  grid-template-rows: 383px;
+  margin-inline: 36px;
+  background-color: var(--bg-order-color);
+  background: radial-gradient(circle farthest-side at bottom right, var(--gradient-color), var(--gradient-bg));
+  background-repeat: no-repeat;
+}
+
+.order-content {
+  display: grid;
+  position: absolute;
+  width: 684px;
+  top: 86px;
+  left: 73px;
+  gap: 37px;
+}
+
+.order-title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--bg-color);
+}
+
+.order-button {
+  display: grid;
+  position: relative;
+  align-items: center;
+  width: 249px;
+  height: 61px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%);
+  background-color: var(--bg-button-color);
+  color: var(--bg-color);
+}
+
+.order-button_arrow {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 41px;
+  top: 25px;
+  width: 4.55px;
+  height: 4.55px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  color: var(--bg-color);
+}
+
+@media (min-width:1024px) and (max-width:1699px) {
+  .order {
+    margin-inline: 30px;
+  }
+
+  .order-content {
+    top: 60px;
+    left: 60px;
+
+  }
+
+  .order-title {
+    font-size: 47px;
+    line-height: 56px;
+  }
+
+  .order-button {
+    width: 195px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .order-button_arrow {
+    right: 27px;
+    top: 22px;
+  }
+}
+
+@media (max-width:1023px) {
+  .order {
+    margin-inline: 0px;
+    height: 500px;
+  }
+
+  .order-content {
+    top: 40px;
+    left: 12px;
+    width: 351px;
+    gap: 12px;
+  }
+
+  .order-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .order-button {
+    width: 195px;
+    height: 44px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .order-button_arrow {
+    right: 27px;
+    top: 18px;
+  }
+
+
+}

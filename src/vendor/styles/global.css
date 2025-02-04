@@ -1,54 +1,17 @@
-
 .root {
   --font-family-main: "PFDinTextCondPro-Regular";
   --bg-color: rgba(255, 255, 255, 1);
-  --bg-brown-color:rgb(97, 77, 73);
+  --bg-brown-color: rgb(97, 77, 73);
   --dark-brown-color: rgb(80, 61, 58);
   --light-brown-color: rgba(211, 200, 187, 1);
-
-
-  --secondary-color: rgba(232, 225, 224, 1);
-  --tertiary-color: rgba(217, 217, 217, 1);
-  --bg-button-color:rgba(178, 31, 36, 1);
-  --fifth-color: rgba(170, 146, 122, 1);
-  --sixth-color: rgba(191, 173, 155, 1);
-  
-
+  --bg-button-color: rgba(178, 31, 36, 1);
+  --light-gray: rgba(242, 242, 242, 1);
+  --gold-color: rgba(170, 146, 122, 1);
+  --black-color: rgba(49, 19, 17, 1);
+  --dark-gray-color: rgba(124, 110, 107, 1);
+  --bg-gray-color: rgba(217, 217, 217, 1);
+  --gradient-bg:rgba(170, 146, 122, 0.92);
+  --gradient-color: rgba(242, 241, 240, 0.92);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-a,
-div,
-span,
-button {
-  text-decoration: none;
-  outline: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul,
-ol,
-li,
-a {
-  list-style: none;
-}
-
-a:visited{
-  color:var(--bg-color)
-}
-
-a,
-button {
-  cursor: pointer;
-}
+ 

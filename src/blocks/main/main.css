@@ -2,4 +2,18 @@
   display: grid;
   width: 100%;
   background-color: var(--bg-color);
+  grid-template-rows: repeat(4, min-content);
+  gap: 130px;
+}
+
+@media (min-width:1024px) and (max-width:1699px) {
+  .main {
+    gap: 80px;
+  }
+}
+
+@media (max-width:1023px) {
+  .main {
+    gap: 60px;
+  }
 }
