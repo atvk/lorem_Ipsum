@@ -48,4 +48,7 @@
 
 ### Ссылки на проект
 
+https://github.com/atvk/lorem_Ipsum
+
 https://lorem-ipsum-rho.vercel.app/
+
