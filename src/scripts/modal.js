@@ -5,17 +5,17 @@ function handleEscape(e) {
   }
 }
 
-export function openPopup(popup) {
+function openPopup(popup) {
   popup.classList.add("popup_is-opened");
   document.addEventListener("keydown", handleEscape);
 }
 
-export function closePopup(popup) {
+function closePopup(popup) {
   popup.classList.remove("popup_is-opened");
   document.removeEventListener("keydown", handleEscape);
 }
 
-export function setCloseByClickListeners(popups) {
+function setCloseByClickListeners(popups) {
   popups.forEach((popup) => {
     popup.addEventListener("mousedown", (e) => {
       if (e.target.classList.contains("popup__close")) {
@@ -27,3 +27,16 @@ export function setCloseByClickListeners(popups) {
     });
   });
 }
+
+const buttonConnection = document.querySelector(".connection-button");
+const popupOpen = document.querySelector(".popup_type_order");
+const popupClose = document.querySelector("popup__close")
+const popups = document.querySelectorAll(".popup");
+
+buttonConnection.addEventListener("click", () => {
+openPopup(popupOpen);
+});
+
+setCloseByClickListeners(popups);
+
+
